@@ -1,0 +1,23 @@
+/*** General ***/
+
+html {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*** End General ***/
+
+/*** Contact Form ***/
+
+.contact-form input[type="text"] {
+    width: 80%;
+    border-radius: 10%;
+    margin: 10px 20px;
+    border: 1px solid green;
+    padding: 20px 10px;
+}
+
+/*** END Contact Form ***/
+© 2020 GitHub, Inc.
