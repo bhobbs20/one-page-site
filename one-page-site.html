@@ -4,121 +4,141 @@
         <meta charset="UTF-8">
         <title>One Page site</title>
         <link rel="stylesheet" type="text/css" href="css/one-page-site.css">
+        <script src="./js/one-page.js"></script>
     </head>
     <body>
-    <!--Navbar-->
-        <header>
-            <nav>
-                <ul>
-                    <li> <a href="#home">Home</a></li>
-                    <li> <a href="#about">About</a></li>
-                    <li> <a href="#gallery">Gallery</a></li>
-                    <li> <a href="#contact">Contact</a></li>
-                </ul>
+        <!--- NAVBAR -->
+        <header class="navbar">
+            <nav class="navbar-navigation">
+                <div class="navbar-toggle-button"> </div>
+                <div class="navbar-logo"><a href="#">Rick & Morty</a></div>
+                <div class="spacer"></div>
+                <div class="navbar-items">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    
+                    </ul>
+                </div>
             </nav>
         </header>
-        <!-- End Navbar-->
+        <!--- END NAVBAR -->
+
         <!--Home-->
-        <section>
-            <div id="home">
-                <h1>Cool Site</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+       <section id="home">
+            <div class="hero">
+                <div class="hero-overlay">
+                    <h1>Rick and Morty</h1>
+                </div>
+                <img src="./images/ricker.jpg" alt="" class="hero-image">
             </div>
         </section>
         <!--End Home-->
         <!--About-->
         <section>
             <div id="about">
-            <h1>About</h1>
-                <div>
-                    <h3>Video here</h3>
-                    <!-- video goes here -->
-                <div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+           
+            <div class="two-col-container">
+             <h1 class="title">About</h1>
+                <div class="row-about">
+                    <div class="column-about">
+                        <div class="morty-col">
+                            <div class="morty-container">
+                                <img src="./images/happy.png" alt="Morty" class="morty-image">
+                            
+                                <div class="middle">  
+                                    <div class="text">
+                                        <a href="https://youtu.be/s_1lP4CBKOg"><h3>Check it out</h3></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-about">
+                        <div class="info-col">
+                            <div class="text-box">
+                                <h2> Rick & Morty</h2>
+                                <p>Rick and Morty is an American adult animated science fiction sitcom created by Justin Roiland and Dan Harmon for Cartoon Network's late-night programming block Adult Swim. The series follows the misadventures of cynical mad scientist Rick Sanchez and his good-hearted but fretful grandson Morty Smith, who split their time between domestic life and interdimensional adventures.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- END TWO COLUMN -->
         </section>
     <!--End About-->
+
     <!-- Gallery-->
-          <section>
+        <section>
             <div id="gallery">
-                <h1>Gallery</h1>
-                <div>
-                    <!-- Photo Container 1 -->
-                    <div>
-                        <div>
-                            <img src="" alt="Cool Image">
-                            <div>
-                                <h3>Cool heading</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                            </div>
-                        </div>
+                <h1 class="title">Gallery</h1>
+
+                <div class="row">
+                    <div class="column">
+                        <img src="./images/little-rick.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                     </div>
-                    <!-- END Photo-container -->
-                    <!-- Photo Container 2 -->
-                    <div>
-                        <div>
-                        <img src="" alt="Cool Image 2">
-                            <div>
-                                <h3>Cool heading</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                            </div>
-                        </div>
+                    <div class="column">
+                        <img src="./images/family.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
                     </div>
-                    <!-- END Photo-container -->
-                    <!-- Photo Container 3-->
-                    <div>
-                        <div>
-                        <img src="" alt="Cool Image 3">
-                            <div>
-                                <h3>Cool heading</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                            </div>
-                        </div>
+                    <div class="column">
+                        <img src="./images/guitar.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
                     </div>
-                    <!-- END Photo-container -->
-                    <!-- Photo Container 4 -->
-                    <div>
-                        <div>
-                        <img src="" alt="Cool Image 4">
-                            <div>
-                                <h3>Cool heading</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p> 
-                            </div>
-                        </div>
+                    <div class="column">
+                        <img src="./images/swifty.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
                     </div>
-                    <!-- END Photo-container -->
-                    <!-- Photo Container 5-->
-                    <div>
-                        <div>
-                        <img src="" alt="Cool Image 5">
-                            <div>
-                               <h3>Cool heading</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                            </div>
+                </div>
+
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="./images/little-rick.jpg" style="width:100%" alt="Tiny Rick">
                         </div>
-                    </div>
-                    <!-- END Photo-container -->
-                    <!-- Photo Container 6-->
-                    <div>
-                        <div>
-                        <img src="" alt="Cool Image 6">
-                            <div>
-                                <h3>Cool heading</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                            </div>
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="./images/family.png" style="width:100%" alt="The Smiths">
                         </div>
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="./images/guitar.jpg" style="width:100%" alt="Rick plays Guitar">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="./images/swifty.jpg" style="width:100%" alt="Get Swifty">
+                        </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                     </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="./images/little-rick.jpg" style="width:100%" onclick="currentSlide(1)" alt="Tiny Rick">
                     </div>
-                    <!-- END Photo-container -->
+                    <div class="column">
+                        <img class="demo cursor" src="./images/ricker.jpg" style="width:100%" onclick="currentSlide(2)" alt="Rick and Morty">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./images/family.png" style="width:100%" onclick="currentSlide(3)" alt="The Smiths">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./images/guitar.jpg" style="width:100%" onclick="currentSlide(4)" alt="Rick plays Guitar">
+                    </div>
                 </div>
             </div>
+        
         </section>
         <!-- END GALLERY -->
+
         <!-- Contact-->
         <section>
             <div id="contact">
-            <h1>Contact Us</h1>
+            <h1 class="title">Contact Us</h1>
                 <form class="contact-form" action="" method="post">
                     <input class="contact-info" type="text" value="" placeholder="Name">
                     <input class="contact-info" type="text" value="" placeholder="Email">
@@ -132,8 +152,8 @@
         </section>
         <!--End Contact-->
         <!--footer-->
-        <footer>
-            <h5>This is the footer</h5>
+        <footer class="footer">
+            <h5>HobbsDev</h5>
         </footer>
         <!-- End Footer-->
     </body>
